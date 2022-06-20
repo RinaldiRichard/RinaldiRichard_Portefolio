@@ -130,49 +130,49 @@ nav .navlinks-container a:hover::after {
 }
 
 .accueil h1 {
-  margin: 10% 20% 0 30%;
+  margin: 10% 20% 0 40%;
   font-size: 2.5vw;
 }
 
 .presentation {
-  height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  height: 70vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titre titre" "photo texte";
   background-color: #2c2c2c;
   margin-top: 2em;
+  color: #fff;
 }
 
 .presentation img {
-  width: 50%;
-}
-
-.presentation .textPresentation {
-  width: 50%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: photo;
   margin: auto;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 50%;
+  border-radius: 25%;
 }
 
-.presentation .textPresentation h2 {
-  padding-bottom: 10%;
+.presentation h2 {
+  text-align: end;
+  -ms-flex-item-align: center;
+      align-self: center;
   font-size: 30px;
   text-transform: uppercase;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: titre;
+  margin-right: 10%;
 }
 
-.presentation .textPresentation p {
-  margin: auto 20%;
+.presentation p {
+  margin: auto;
+  width: 50%;
   font-size: 1.2em;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: texte;
 }
 
 .competences {
@@ -180,19 +180,16 @@ nav .navlinks-container a:hover::after {
   display: grid;
   background: #fff;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
   -webkit-box-shadow: inset 0 0 40px;
-  box-shadow: inset 0 0 40px;
+          box-shadow: inset 0 0 40px;
       grid-template-areas: "titre titre titre" "front back git";
+  padding-bottom: 3em;
 }
 
 .competences h2 {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  grid-column: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -216,19 +213,11 @@ nav .navlinks-container a:hover::after {
 
 .competences .divFront {
   -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: front;
 }
 
 .competences .divBack {
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 2;
-  grid-column: 2;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: back;
@@ -236,12 +225,31 @@ nav .navlinks-container a:hover::after {
 
 .competences .divGit {
   -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: git;
+}
+
+.parcours {
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.parcours h2 {
+  margin: 2em 10%;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #fff;
+  text-align: start;
+}
+
+.parcours p {
+  color: #fff;
 }
 
 @media (max-width: 1008px) {
@@ -367,12 +375,19 @@ nav .navlinks-container a:hover::after {
     font-size: 20px;
     margin: 5% 20% 0 0;
   }
-  .presentation .textPresentation {
-    margin: auto;
-    width: 50%;
+  .presentation {
+    height: 100vh;
   }
-  .presentation .textPresentation p {
-    margin: 0;
+  .presentation h2 {
+    text-align: center;
+    margin: 1em auto;
+  }
+  .presentation img {
+    width: 75%;
+    margin: auto;
+  }
+  .presentation p {
+    margin: 1em auto;
   }
   .competences {
         grid-template-areas: "titre titre" "front back" "git git";
@@ -392,21 +407,43 @@ nav .navlinks-container a:hover::after {
   }
   .accueil h1 {
     font-size: 20px;
-    margin: 5% 20% 0 0;
+    margin: 20% auto;
   }
   .presentation {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        grid-template-areas: "titre" "photo" "texte";
   }
   .presentation .textPresentation {
     margin: auto;
     width: 100%;
   }
+  .presentation img {
+    margin: 1em auto;
+  }
+  .presentation p {
+    width: auto;
+    font-size: 1em;
+    margin: 1em 20px !important;
+  }
   .competences {
-        grid-template-areas: "titre " "front" "back" "git";
-    row-gap: 1em;
+    height: 80vh;
+    row-gap: 0;
+        grid-template-areas: "titre" "front" "back" "git";
+  }
+  h2 {
+    font-size: 20px !important;
+    margin: 1em auto 0.5em auto !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  div {
+    margin: auto;
+  }
+  div li {
+    font-size: 15px !important;
   }
 }
 
