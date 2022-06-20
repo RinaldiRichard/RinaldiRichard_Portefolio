@@ -252,6 +252,31 @@ nav .navlinks-container a:hover::after {
   color: #fff;
 }
 
+.btnArrow {
+  height: 3em;
+  width: 3em;
+  background: #6d071a;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.btnArrow i {
+  color: white;
+}
+
 @media (max-width: 1008px) {
   body {
     display: -webkit-box;
@@ -444,12 +469,6 @@ nav .navlinks-container a:hover::after {
   }
   .competences div li {
     font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  p {
-    margin: 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

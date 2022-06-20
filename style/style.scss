@@ -188,6 +188,23 @@ nav {
     color: #fff;
   }
 }
+.btnArrow{
+  height: 3em;
+  width: 3em;
+  background: #6d071a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  opacity: 0;
+  i{
+    color: white;
+  }
+}
 
 // RESPONSIVE TABLETTE
 
@@ -364,8 +381,4 @@ nav {
     }
   }
 }
-@media screen and (max-width: 400px) {
-  p {
-    margin: 0 !important;
-  }
-}
+
