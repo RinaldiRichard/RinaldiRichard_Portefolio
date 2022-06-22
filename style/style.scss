@@ -82,20 +82,16 @@ nav {
   }
 }
 .accueil {
-  height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 100vh;
+  width: 100%;
+  position: relative;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
+overflow: hidden;
   margin: 0 auto;
   background: url(../ressources/computer.avif);
   background-attachment: fixed;
   background-size: cover;
-  -webkit-box-shadow: inset 0 0 40px;
+  background-repeat: no-repeat;
   box-shadow: inset 0 0 40px;
   h1 {
     margin: 10% 20% 0 40%;
@@ -305,11 +301,12 @@ nav {
       margin: 1em auto;
     }
     img {
-      width: 75%;
+      width: 55%;
       margin: auto;
     }
     p {
-      margin: 1em auto;
+      margin: auto;
+      font-size: 1em;
     }
   }
   .competences {
@@ -334,6 +331,7 @@ nav {
     font-size: 20px;
   }
   .accueil {
+    background-image: url(../ressources/ordi.png);
     margin: 0;
     h1 {
       font-size: 20px;
@@ -392,8 +390,7 @@ nav {
 
 @media screen and (max-width: 300px) {
   .nav-icon {
-
-    img{
+    img {
       width: 50px !important;
       height: 50px !important;
     }
