@@ -420,6 +420,9 @@ nav .navlinks-container a:hover::after {
 }
 
 @media screen and (min-width: 767px) and (max-width: 821px) {
+  .presentation {
+    height: 70vh;
+  }
   .presentation h2 {
     margin: auto;
   }
