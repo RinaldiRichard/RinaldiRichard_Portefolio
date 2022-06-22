@@ -1,6 +1,7 @@
 const hamburgerToggler = document.querySelector(".hamburger");
 const navLinksContainer = document.querySelector(".navlinks-container");
-console.log(window.scrollY);
+const btn = document.querySelector(".btnArrow");
+
 const toggleNav = () => {
   hamburgerToggler.classList.toggle("open");
 
@@ -21,8 +22,6 @@ new ResizeObserver((entries) => {
     navLinksContainer.style.transition = "none";
   }
 }).observe(document.body);
-
-const btn = document.querySelector(".btnArrow");
 
 btn.addEventListener("click", () => {
   window.scrollTo({
