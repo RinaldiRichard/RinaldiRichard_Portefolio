@@ -431,7 +431,7 @@ nav .navlinks-container a:hover::after {
     font-size: 20px;
   }
   .accueil {
-    background-image: url(../ressources/ordi.png);
+    background-image: url(../ressources/ordi.png) !important;
     margin: 0;
   }
   .accueil h1 {
