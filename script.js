@@ -1,6 +1,7 @@
 const hamburgerToggler = document.querySelector(".hamburger");
 const navLinksContainer = document.querySelector(".navlinks-container");
 const btn = document.querySelector(".btnArrow");
+const ulToggle = document.querySelector(".toggle")
 
 const toggleNav = () => {
   hamburgerToggler.classList.toggle("open");
@@ -12,8 +13,10 @@ const toggleNav = () => {
   hamburgerToggler.setAttribute("aria-expanded", ariaToggle);
 
   navLinksContainer.classList.toggle("open");
+
 };
 hamburgerToggler.addEventListener("click", toggleNav);
+ulToggle.addEventListener("click", toggleNav)
 
 new ResizeObserver((entries) => {
   if (entries[0].contentRect.width <= 900) {
