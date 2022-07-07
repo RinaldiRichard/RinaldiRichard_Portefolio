@@ -250,6 +250,63 @@ nav .navlinks-container a:hover::after {
   color: #fff;
 }
 
+.parcours .xpDate {
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+
+.parcours .xpFormation {
+  margin: 1em auto;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.parcours ul {
+  margin: auto;
+}
+
+.parcours ul li {
+  color: white;
+  margin: 1.5em 0;
+}
+
+.parcours ul li:nth-child(8) {
+  padding-bottom: 3em;
+}
+
+.projets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 40px;
+          box-shadow: inset 0 0 40px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #2c2c2c;
+  margin: 0 auto;
+  color: white;
+}
+
+.contact h2 {
+  margin: 2em auto;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
 .btnArrow {
   height: 3em;
   width: 3em;
@@ -417,6 +474,29 @@ nav .navlinks-container a:hover::after {
         grid-template-areas: "titre titre" "front back" "git git";
     row-gap: 1em;
   }
+  .parcours h2 {
+    text-align: center;
+    padding: 0;
+  }
+  .parcours .xpDate {
+    font-size: 1.3em;
+    text-decoration: underline;
+  }
+  .parcours .xpFormation {
+    margin: 1em auto;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  .parcours ul {
+    width: 90%;
+  }
+  .parcours ul li {
+    color: white;
+    margin: 1.5em 0;
+  }
+  .parcours ul li:nth-child(8) {
+    padding-bottom: 3em;
+  }
 }
 
 @media screen and (min-width: 767px) and (max-width: 821px) {
@@ -438,7 +518,7 @@ nav .navlinks-container a:hover::after {
 
 @media (max-width: 641px) {
   h2 {
-    font-size: 20px !important;
+    font-size: 20px;
   }
   .nav-icon img {
     width: 30px;
@@ -447,7 +527,7 @@ nav .navlinks-container a:hover::after {
     font-size: 20px;
   }
   .accueil {
-    background-image: url(../ressources/ordi.avif) !important;
+    background-image: url(../ressources/ordi.avif);
     margin: 0;
   }
   .accueil h1 {
@@ -471,6 +551,7 @@ nav .navlinks-container a:hover::after {
     width: auto;
     font-size: 1em;
     margin: 1em 20px;
+    text-align: justify;
   }
   .competences {
     height: 80vh;
