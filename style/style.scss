@@ -102,7 +102,7 @@ nav {
   display: grid;
   grid-template-areas:
     "titre titre"
-    "photo texte";
+    "texte photo";
   background-color: #2c2c2c;
   margin-top: 2em;
   color: #fff;
@@ -114,12 +114,12 @@ nav {
   }
 
   h2 {
-    text-align: end;
+    text-align: start;
     align-self: center;
     font-size: 30px;
     text-transform: uppercase;
     grid-area: titre;
-    margin-right: 10%;
+    margin: 0 10%;
   }
   p {
     margin: auto;
@@ -202,12 +202,38 @@ nav {
   display: flex;
   flex-direction: column;
   background: #fff;
-  text-align: center;
+
   box-shadow: inset 0 0 40px;
   h2 {
     margin: 2em auto;
     text-transform: uppercase;
     font-size: 30px;
+  }
+  ul {
+    display: grid;
+    grid-template-areas:
+      "p1 p2 p3"
+      "p4 p5 p6";
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+    li {
+      border: #2c2c2c 2px solid;
+      margin: 2em auto;
+      a {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        figcaption {
+          max-width: 300px;
+          margin: 2em 0;
+          h3{
+            margin: 1em 0;
+          }
+        }
+      }
+    }
   }
 }
 .contact {
@@ -233,9 +259,9 @@ nav {
     text-align: center;
     align-items: center;
     margin-bottom: 3em;
-p{
-  width: 40%;
-}
+    p {
+      width: 40%;
+    }
     .divLink {
       display: flex;
       flex-direction: column;
@@ -245,7 +271,7 @@ p{
         font-size: 20px;
         margin: 0.35em auto;
       }
-      i{
+      i {
         font-size: 30px;
       }
     }
@@ -279,7 +305,7 @@ p{
   nav {
     position: relative;
   }
-  h2{
+  h2 {
     text-align: center !important;
     margin: auto;
   }
@@ -377,7 +403,7 @@ p{
     }
     p {
       margin: auto;
-      font-size: 1em;
+      font-size: 0.85em;
     }
   }
   .competences {
@@ -411,10 +437,10 @@ p{
       }
     }
   }
-  .contact{
-    .divContact{
+  .contact {
+    .divContact {
       flex-direction: column;
-      p{
+      p {
         width: 90%;
       }
     }
@@ -507,7 +533,6 @@ p{
   .parcours {
     margin: auto;
   }
-
 }
 
 @media screen and (max-width: 300px) {

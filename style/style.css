@@ -136,7 +136,7 @@ nav .navlinks-container a:hover::after {
   height: 70vh;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titre titre" "photo texte";
+      grid-template-areas: "titre titre" "texte photo";
   background-color: #2c2c2c;
   margin-top: 2em;
   color: #fff;
@@ -144,7 +144,7 @@ nav .navlinks-container a:hover::after {
 
 .presentation img {
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: photo;
   margin: auto;
   width: 50%;
@@ -152,7 +152,7 @@ nav .navlinks-container a:hover::after {
 }
 
 .presentation h2 {
-  text-align: end;
+  text-align: start;
   -ms-flex-item-align: center;
       align-self: center;
   font-size: 30px;
@@ -161,7 +161,7 @@ nav .navlinks-container a:hover::after {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: titre;
-  margin-right: 10%;
+  margin: 0 10%;
 }
 
 .presentation p {
@@ -169,7 +169,7 @@ nav .navlinks-container a:hover::after {
   width: 50%;
   font-size: 1.2em;
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: texte;
 }
 
@@ -280,7 +280,6 @@ nav .navlinks-container a:hover::after {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #fff;
-  text-align: center;
   -webkit-box-shadow: inset 0 0 40px;
           box-shadow: inset 0 0 40px;
 }
@@ -289,6 +288,42 @@ nav .navlinks-container a:hover::after {
   margin: 2em auto;
   text-transform: uppercase;
   font-size: 30px;
+}
+
+.projets ul {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "p1 p2 p3" "p4 p5 p6";
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 3em;
+}
+
+.projets ul li {
+  border: #2c2c2c 2px solid;
+  margin: 2em auto;
+}
+
+.projets ul li a {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.projets ul li a figcaption {
+  max-width: 300px;
+  margin: 2em 0;
+}
+
+.projets ul li a figcaption h3 {
+  margin: 1em 0;
 }
 
 .contact {
@@ -517,7 +552,7 @@ nav .navlinks-container a:hover::after {
   }
   .presentation p {
     margin: auto;
-    font-size: 1em;
+    font-size: 0.85em;
   }
   .competences {
         grid-template-areas: "titre titre" "front back" "git git";
