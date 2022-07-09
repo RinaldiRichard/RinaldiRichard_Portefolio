@@ -229,9 +229,11 @@ nav {
           background: rgb(148, 148, 148);
           img {
             position: relative;
-            width: auto;
+
             margin: 0.5em auto;
             border-radius: 50%;
+            object-fit: cover;
+            size: 200px;
           }
         }
         figcaption {

@@ -328,9 +328,11 @@ nav .navlinks-container a:hover::after {
 
 .projets ul li a .divImgProjets img {
   position: relative;
-  width: auto;
   margin: 0.5em auto;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  size: 200px;
 }
 
 .projets ul li a figcaption {
