@@ -202,8 +202,8 @@ nav {
   display: flex;
   flex-direction: column;
   background: #fff;
-
   box-shadow: inset 0 0 40px;
+
   h2 {
     margin: 2em auto;
     text-transform: uppercase;
@@ -211,13 +211,13 @@ nav {
   }
   ul {
     display: grid;
-    grid-template-areas:
-      "p1 p2 p3"
-      "p4 p5 p6";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2em;
     justify-content: space-evenly;
     margin-bottom: 3em;
+    margin: auto;
     li {
-      border: #2c2c2c 2px solid;
       margin: 2em auto;
       a {
         text-align: center;
@@ -225,11 +225,23 @@ nav {
         justify-content: center;
         text-decoration: none;
         color: black;
+        .divImgProjets {
+          background: rgb(148, 148, 148);
+          img {
+            position: relative;
+            width: auto;
+            margin: 0.5em auto;
+            border-radius: 50%;
+          }
+        }
         figcaption {
           max-width: 300px;
-          margin: 2em 0;
-          h3{
+          border: #2c2c2c 1px solid;
+          h3 {
             margin: 1em 0;
+          }
+          p{
+            margin-bottom: 1em;
           }
         }
       }
@@ -437,6 +449,12 @@ nav {
       }
     }
   }
+  .projets {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+  }
   .contact {
     .divContact {
       flex-direction: column;
@@ -528,6 +546,12 @@ nav {
         font-size: 15px;
         margin: auto;
       }
+    }
+  }
+  .projets {
+    ul {
+      display: flex;
+      flex-direction: column;
     }
   }
   .parcours {
