@@ -294,7 +294,6 @@ nav .navlinks-container a:hover::after {
 .projets ul {
   display: -ms-grid;
   display: grid;
-  width: 100%;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: 8em;
@@ -328,8 +327,8 @@ nav .navlinks-container a:hover::after {
 }
 
 .projets ul li a .divImgProjets img {
-  width: 80%;
-  height: 8em;
+  width: auto;
+  height: 10em;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -609,6 +608,10 @@ nav .navlinks-container a:hover::after {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: auto;
         grid-template-rows: auto;
+    height: auto;
+  }
+  .projets ul img {
+    height: 7em !important;
   }
   .contact .divContact {
     -webkit-box-orient: vertical;

@@ -211,7 +211,6 @@ nav {
   }
   ul {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 8em;
     margin-bottom: 4em;
@@ -229,8 +228,8 @@ nav {
         .divImgProjets {
           width: auto;
           img {
-            width: 80%;
-            height: 8em;
+            width: auto;
+            height: 10em;
             object-fit: cover;
           }
         }
@@ -457,6 +456,10 @@ nav {
     ul {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
+      height: auto;
+      img{
+        height: 7em !important;
+      }
     }
     
   }
