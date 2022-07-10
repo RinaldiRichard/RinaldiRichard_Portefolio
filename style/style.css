@@ -282,6 +282,7 @@ nav .navlinks-container a:hover::after {
   background: #fff;
   -webkit-box-shadow: inset 0 0 40px;
           box-shadow: inset 0 0 40px;
+  height: 100%;
 }
 
 .projets h2 {
@@ -293,17 +294,12 @@ nav .navlinks-container a:hover::after {
 .projets ul {
   display: -ms-grid;
   display: grid;
+  width: 100%;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-bottom: 3em;
-  margin: auto;
+  -webkit-column-gap: 8em;
+          column-gap: 8em;
+  margin-bottom: 4em;
 }
 
 .projets ul li {
@@ -311,6 +307,13 @@ nav .navlinks-container a:hover::after {
 }
 
 .projets ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.projets ul li a .divCardGrid {
+  display: -ms-grid;
+  display: grid;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -318,26 +321,21 @@ nav .navlinks-container a:hover::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-decoration: none;
-  color: black;
 }
 
 .projets ul li a .divImgProjets {
-  background: #949494;
+  width: auto;
 }
 
 .projets ul li a .divImgProjets img {
-  position: relative;
-  margin: 0.5em auto;
-  border-radius: 50%;
+  width: 80%;
+  height: 8em;
   -o-object-fit: cover;
      object-fit: cover;
-  size: 200px;
 }
 
 .projets ul li a figcaption {
-  max-width: 300px;
-  border: #2c2c2c 1px solid;
+  margin: auto 3em;
 }
 
 .projets ul li a figcaption h3 {
@@ -346,6 +344,10 @@ nav .navlinks-container a:hover::after {
 
 .projets ul li a figcaption p {
   margin-bottom: 1em;
+}
+
+.projets ul li:nth-child(2) img {
+  border-radius: 10%;
 }
 
 .contact {
@@ -694,14 +696,19 @@ nav .navlinks-container a:hover::after {
     font-size: 15px;
     margin: auto;
   }
+  .projets {
+    height: 100%;
+  }
   .projets ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .projets li:nth-child(1) img {
+    margin-bottom: -0.8em;
   }
   .parcours {
     margin: auto;
