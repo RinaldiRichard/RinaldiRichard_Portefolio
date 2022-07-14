@@ -533,7 +533,8 @@ nav .navlinks-container a:hover::after {
     text-align: center;
   }
   .competences {
-    height: 80vh;
+    height: auto;
+    margin-bottom: 3em;
     row-gap: 0;
     grid-template-areas: "titre" "front" "back" "git" "soft";
   }
