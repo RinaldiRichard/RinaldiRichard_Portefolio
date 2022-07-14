@@ -557,7 +557,6 @@ nav {
 
   .competences {
     height: auto;
-    margin-bottom: 3em;
     row-gap: 0;
     grid-template-areas:
       "titre"
@@ -579,6 +578,7 @@ nav {
         margin: auto;
       }
     }
+    
   }
   .projets {
     height: 100%;
