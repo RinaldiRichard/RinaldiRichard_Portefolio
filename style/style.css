@@ -530,7 +530,7 @@ nav .navlinks-container a:hover::after {
     width: auto;
     font-size: 1em;
     margin: 1em 20px;
-    text-align: justify;
+    text-align: center;
   }
   .competences {
     height: 80vh;
