@@ -232,6 +232,9 @@ nav {
             height: 10em;
             object-fit: cover;
           }
+          img:nth-child(2){
+            height: 5em !important;
+          }
         }
         figcaption {
           margin: auto 3em;

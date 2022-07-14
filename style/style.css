@@ -1,8 +1,7 @@
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -23,28 +22,17 @@ ul {
 nav {
   width: 100%;
   height: 6em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   background: #2c2c2c;
 }
-
 nav .nav-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   margin-right: 20px;
 }
-
 nav .nav-icon span {
   font-family: Roboto Flex, sans-serif;
   font-size: 25px;
@@ -52,32 +40,24 @@ nav .nav-icon span {
   font-weight: 400;
   color: #fff;
 }
-
 nav .nav-icon img {
   width: 80px;
   height: 80px;
 }
-
 nav .hamburger {
   display: none;
   padding-left: 1em;
 }
-
 nav .navlinks-container {
   font-size: 25px;
 }
-
 nav .navlinks-container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 25px;
 }
-
 nav .navlinks-container ul li {
   font-size: 25px;
 }
-
 nav .navlinks-container a {
   margin: 0 1em;
   font-size: 20px;
@@ -87,7 +67,6 @@ nav .navlinks-container a {
   display: inline-block;
   position: relative;
 }
-
 nav .navlinks-container a::after {
   content: "";
   display: block;
@@ -95,27 +74,18 @@ nav .navlinks-container a::after {
   bottom: -3px;
   width: 100%;
   height: 1px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  transform: scaleX(0);
+  transform-origin: left;
   background: #fff;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
-
 nav .navlinks-container a:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .accueil {
   height: 90vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   margin: 0 auto;
@@ -123,10 +93,8 @@ nav .navlinks-container a:hover::after {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-box-shadow: inset 0 0 40px;
-          box-shadow: inset 0 0 40px;
+  box-shadow: inset 0 0 40px;
 }
-
 .accueil h1 {
   margin: 10% 20% 0 40%;
   font-size: 2.5vw;
@@ -134,107 +102,73 @@ nav .navlinks-container a:hover::after {
 
 .presentation {
   height: 70vh;
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "titre titre" "texte photo";
+  grid-template-areas: "titre titre" "texte photo";
   background-color: #2c2c2c;
   margin-top: 2em;
   color: #fff;
 }
-
 .presentation img {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: photo;
   margin: auto;
   width: 50%;
   border-radius: 25%;
 }
-
 .presentation h2 {
   text-align: start;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   font-size: 30px;
   text-transform: uppercase;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: titre;
   margin: 0 10%;
 }
-
 .presentation p {
   margin: auto;
   width: 50%;
   font-size: 1.2em;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: texte;
 }
 
 .competences {
-  display: -ms-grid;
   display: grid;
   background: #fff;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   text-align: center;
-  -webkit-box-shadow: inset 0 0 40px;
-          box-shadow: inset 0 0 40px;
-      grid-template-areas: "titre titre titre" "front back git";
+  box-shadow: inset 0 0 40px;
+  grid-template-areas: "titre titre titre" "front back git";
   padding-bottom: 3em;
 }
-
 .competences h2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: titre;
   margin: 2em auto;
   text-transform: uppercase;
   font-size: 30px;
 }
-
 .competences h3 {
   margin: 1em auto;
   font-size: 28px;
   text-decoration: underline;
   font-style: italic;
 }
-
 .competences li {
   margin: 0.5em auto;
   font-size: 25px;
 }
-
 .competences .divFront {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: front;
 }
-
 .competences .divBack {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: back;
 }
-
 .competences .divGit {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: git;
 }
 
 .parcours {
   margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
 }
-
 .parcours h2 {
   margin: 2em 10%;
   text-transform: uppercase;
@@ -242,109 +176,82 @@ nav .navlinks-container a:hover::after {
   color: #fff;
   text-align: start;
 }
-
 .parcours p {
   color: #fff;
 }
-
 .parcours .xpDate {
   font-size: 1.3em;
   text-decoration: underline;
 }
-
 .parcours .xpFormation {
   margin: 1em auto;
   font-size: 1.1em;
   font-weight: 600;
 }
-
 .parcours ul {
   margin: auto;
 }
-
 .parcours ul li {
   color: white;
   margin: 1.5em 0;
 }
-
 .parcours ul li:nth-child(8) {
   padding-bottom: 3em;
 }
 
 .projets {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background: #fff;
-  -webkit-box-shadow: inset 0 0 40px;
-          box-shadow: inset 0 0 40px;
+  box-shadow: inset 0 0 40px;
   height: 100%;
 }
-
 .projets h2 {
   margin: 2em auto;
   text-transform: uppercase;
   font-size: 30px;
 }
-
 .projets ul {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 8em;
-          column-gap: 8em;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 8em;
+       column-gap: 8em;
   margin-bottom: 4em;
 }
-
 .projets ul li {
   margin: 2em auto;
 }
-
 .projets ul li a {
   text-decoration: none;
   color: black;
 }
-
 .projets ul li a .divCardGrid {
-  display: -ms-grid;
   display: grid;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .projets ul li a .divImgProjets {
   width: auto;
 }
-
 .projets ul li a .divImgProjets img {
   width: auto;
   height: 10em;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
+.projets ul li a .divImgProjets img:nth-child(2) {
+  height: 5em !important;
+}
 .projets ul li a figcaption {
   margin: auto 3em;
 }
-
 .projets ul li a figcaption h3 {
   margin: 1em 0;
 }
-
 .projets ul li a figcaption p {
   margin-bottom: 1em;
 }
-
 .projets ul li:nth-child(2) img {
   border-radius: 10%;
 }
@@ -352,61 +259,41 @@ nav .navlinks-container a:hover::after {
 .contact {
   background-color: #2c2c2c;
   margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   color: white;
 }
-
 .contact h2 {
   text-align: start;
   margin: 2em 10%;
   text-transform: uppercase;
   font-size: 30px;
 }
-
 .contact p {
   text-align: center;
   margin: 0 0 2em 0;
 }
-
 .contact .divContact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 3em;
 }
-
 .contact .divContact p {
   width: 40%;
 }
-
 .contact .divContact .divLink {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .contact .divContact .divLink a {
   text-decoration: none;
   color: white;
   font-size: 20px;
   margin: 0.35em auto;
 }
-
 .contact .divContact .divLink i {
   font-size: 30px;
 }
@@ -416,35 +303,23 @@ nav .navlinks-container a:hover::after {
   width: 3em;
   background: #6d071a;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   right: 20px;
   bottom: 20px;
   cursor: pointer;
   opacity: 0;
 }
-
 .btnArrow i {
   color: white;
 }
 
 @media (max-width: 1008px) {
   body {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   nav {
     position: relative;
@@ -454,31 +329,23 @@ nav .navlinks-container a:hover::after {
     margin: auto;
   }
   .nav-icon {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     margin: 0 auto !important;
   }
   .nav-icon span {
     font-size: 22px;
   }
   .main-navlinks {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .main-navlinks .hamburger {
     width: 30px;
     height: 30px;
     cursor: pointer;
     border: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     background: #2c2c2c;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     position: relative;
   }
   .main-navlinks .hamburger span {
@@ -488,69 +355,46 @@ nav .navlinks-container a:hover::after {
     background: #fff;
     position: absolute;
     pointer-events: none;
-    -webkit-transition: opacity 0.3s 0.15s ease-out;
     transition: opacity 0.3s 0.15s ease-out;
   }
   .hamburger span:nth-child(1),
-  .hamburger span:nth-child(3) {
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    transition: -webkit-transform 0.3s ease-out;
+.hamburger span:nth-child(3) {
     transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   }
   .hamburger span:nth-child(1) {
-    -webkit-transform: translateY(7px);
-            transform: translateY(7px);
+    transform: translateY(7px);
   }
   .hamburger span:nth-child(3) {
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
+    transform: translateY(-7px);
   }
   .hamburger.open span:nth-child(1) {
-    -webkit-transform: translate(0) rotate(135deg);
-            transform: translate(0) rotate(135deg);
+    transform: translate(0) rotate(135deg);
   }
   .hamburger.open span:nth-child(2) {
     opacity: 0;
-    -webkit-transition: opacity 0s ease-out;
     transition: opacity 0s ease-out;
   }
   .hamburger.open span:nth-child(3) {
-    -webkit-transform: translate(0) rotate(-135deg);
-            transform: translate(0) rotate(-135deg);
+    transform: translate(0) rotate(-135deg);
   }
   .navlinks-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     background: #2c2c2c;
     top: 100%;
     left: 0;
     height: auto;
     border-right: 1px solid #c5c5c6;
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
+    transform: translate(-100%);
   }
   .navlinks-container ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .open {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
+    transform: translate(0%);
   }
   .navlinks-container a {
     font-size: 18px;
@@ -578,7 +422,7 @@ nav .navlinks-container a:hover::after {
     font-size: 0.85em;
   }
   .competences {
-        grid-template-areas: "titre titre" "front back" "git git";
+    grid-template-areas: "titre titre" "front back" "git git";
     row-gap: 1em;
   }
   .parcours h2 {
@@ -604,26 +448,20 @@ nav .navlinks-container a:hover::after {
     padding-bottom: 3em;
   }
   .projets ul {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     height: auto;
   }
   .projets ul img {
     height: 7em !important;
   }
   .contact .divContact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .contact .divContact p {
     width: 90%;
   }
 }
-
 @media screen and (min-width: 767px) and (max-width: 821px) {
   .presentation {
     height: 70vh;
@@ -640,7 +478,6 @@ nav .navlinks-container a:hover::after {
     margin: auto;
   }
 }
-
 @media (max-width: 641px) {
   h2 {
     font-size: 20px;
@@ -660,7 +497,7 @@ nav .navlinks-container a:hover::after {
     margin: 10% auto;
   }
   .presentation {
-        grid-template-areas: "titre" "photo" "texte";
+    grid-template-areas: "titre" "photo" "texte";
   }
   .presentation .textPresentation {
     margin: auto;
@@ -681,13 +518,11 @@ nav .navlinks-container a:hover::after {
   .competences {
     height: 80vh;
     row-gap: 0;
-        grid-template-areas: "titre" "front" "back" "git";
+    grid-template-areas: "titre" "front" "back" "git";
   }
   .competences h2 {
     margin: 1em auto 0.5em auto;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
   .competences h3 {
     font-size: 18px;
@@ -703,12 +538,9 @@ nav .navlinks-container a:hover::after {
     height: 100%;
   }
   .projets ul {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
   }
   .projets li:nth-child(1) img {
     margin-bottom: -0.8em;
@@ -717,7 +549,6 @@ nav .navlinks-container a:hover::after {
     margin: auto;
   }
 }
-
 @media screen and (max-width: 300px) {
   .nav-icon img {
     width: 50px !important;
@@ -730,5 +561,4 @@ nav .navlinks-container a:hover::after {
   .presentation h1 {
     margin: 5% auto;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
