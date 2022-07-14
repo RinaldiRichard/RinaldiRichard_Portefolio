@@ -87,7 +87,7 @@ nav {
   display: flex;
   overflow: hidden;
   margin: 0 auto;
-  background: url(../ressources/computer.avif);
+  background: url(../ressources/Computer-min.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -127,6 +127,20 @@ nav {
     font-size: 1.2em;
     grid-area: texte;
   }
+  .btnCV{
+    width: auto;
+    margin-top: 3em;
+    padding: 0.8em;
+    border-radius: 40%;   
+     background-color: #293fa3;
+    a{
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  }  
 }
 .competences {
   display: grid;
@@ -136,7 +150,8 @@ nav {
   box-shadow: inset 0 0 40px;
   grid-template-areas:
     "titre titre titre"
-    "front back git";
+    "front back git"
+    "soft soft soft";
   padding-bottom: 3em;
   h2 {
     grid-area: titre;
@@ -162,6 +177,9 @@ nav {
   }
   .divGit {
     grid-area: git;
+  }
+  .divSoft{
+    grid-area: soft;
   }
 }
 .parcours {
@@ -428,7 +446,8 @@ nav {
     grid-template-areas:
       "titre titre"
       "front back"
-      "git git";
+      "git git"
+      "soft soft";
     row-gap: 1em;
   }
   .parcours {
@@ -506,7 +525,7 @@ nav {
     font-size: 20px;
   }
   .accueil {
-    background-image: url(../ressources/ordi.avif);
+    background-image: url(../ressources/Computer_tel-min.jpg);
     margin: 0;
     h1 {
       font-size: 20px;
@@ -543,7 +562,8 @@ nav {
       "titre"
       "front"
       "back"
-      "git";
+      "git"
+      "soft";
     h2 {
       margin: 1em auto 0.5em auto;
       align-self: center;

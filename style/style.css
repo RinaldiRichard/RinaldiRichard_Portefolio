@@ -89,7 +89,7 @@ nav .navlinks-container a:hover::after {
   display: flex;
   overflow: hidden;
   margin: 0 auto;
-  background: url(../ressources/computer.avif);
+  background: url(../ressources/Computer-min.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -128,6 +128,20 @@ nav .navlinks-container a:hover::after {
   font-size: 1.2em;
   grid-area: texte;
 }
+.presentation .btnCV {
+  width: auto;
+  margin-top: 3em;
+  padding: 0.8em;
+  border-radius: 40%;
+  background-color: #293fa3;
+}
+.presentation .btnCV a {
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
 
 .competences {
   display: grid;
@@ -135,7 +149,7 @@ nav .navlinks-container a:hover::after {
   justify-content: space-evenly;
   text-align: center;
   box-shadow: inset 0 0 40px;
-  grid-template-areas: "titre titre titre" "front back git";
+  grid-template-areas: "titre titre titre" "front back git" "soft soft soft";
   padding-bottom: 3em;
 }
 .competences h2 {
@@ -162,6 +176,9 @@ nav .navlinks-container a:hover::after {
 }
 .competences .divGit {
   grid-area: git;
+}
+.competences .divSoft {
+  grid-area: soft;
 }
 
 .parcours {
@@ -422,7 +439,7 @@ nav .navlinks-container a:hover::after {
     font-size: 0.85em;
   }
   .competences {
-    grid-template-areas: "titre titre" "front back" "git git";
+    grid-template-areas: "titre titre" "front back" "git git" "soft soft";
     row-gap: 1em;
   }
   .parcours h2 {
@@ -489,7 +506,7 @@ nav .navlinks-container a:hover::after {
     font-size: 20px;
   }
   .accueil {
-    background-image: url(../ressources/ordi.avif);
+    background-image: url(../ressources/Computer_tel-min.jpg);
     margin: 0;
   }
   .accueil h1 {
@@ -518,7 +535,7 @@ nav .navlinks-container a:hover::after {
   .competences {
     height: 80vh;
     row-gap: 0;
-    grid-template-areas: "titre" "front" "back" "git";
+    grid-template-areas: "titre" "front" "back" "git" "soft";
   }
   .competences h2 {
     margin: 1em auto 0.5em auto;
