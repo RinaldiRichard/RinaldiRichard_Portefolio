@@ -506,7 +506,7 @@ nav .navlinks-container a:hover::after {
     font-size: 20px;
   }
   .accueil {
-    background-image: url(../ressources/Computer_tel-min.png);
+    background-image: url(../ressources/Computer_tel-min.png) !important;
     margin: 0;
   }
   .accueil h1 {
