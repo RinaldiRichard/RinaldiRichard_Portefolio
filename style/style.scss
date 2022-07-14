@@ -525,7 +525,7 @@ nav {
     font-size: 20px;
   }
   .accueil {
-    background-image: url(../ressources/Computer_tel-min.jpg);
+    background-image: url(../ressources/Computer_tel-min.png);
     margin: 0;
     h1 {
       font-size: 20px;
@@ -554,9 +554,7 @@ nav {
       text-align: center;
     }
   }
-
   .competences {
-    height: auto;
     row-gap: 0;
     grid-template-areas:
       "titre"

@@ -506,7 +506,7 @@ nav .navlinks-container a:hover::after {
     font-size: 20px;
   }
   .accueil {
-    background-image: url(../ressources/Computer_tel-min.jpg);
+    background-image: url(../ressources/Computer_tel-min.png);
     margin: 0;
   }
   .accueil h1 {
@@ -533,7 +533,6 @@ nav .navlinks-container a:hover::after {
     text-align: center;
   }
   .competences {
-    height: auto;
     row-gap: 0;
     grid-template-areas: "titre" "front" "back" "git" "soft";
   }
