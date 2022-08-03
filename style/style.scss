@@ -127,20 +127,20 @@ nav {
     font-size: 1.2em;
     grid-area: texte;
   }
-  .btnCV{
+  .btnCV {
     width: auto;
     margin-top: 3em;
     padding: 0.8em;
-    border-radius: 40%;   
-     background-color: #293fa3;
-    a{
-    text-align: center;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
+    border-radius: 40%;
+    background-color: #293fa3;
+    a {
+      text-align: center;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
   }
-  }  
 }
 .competences {
   display: grid;
@@ -178,7 +178,7 @@ nav {
   .divGit {
     grid-area: git;
   }
-  .divSoft{
+  .divSoft {
     grid-area: soft;
   }
 }
@@ -250,7 +250,7 @@ nav {
             height: 10em;
             object-fit: cover;
           }
-          img:nth-child(2){
+          img:nth-child(2) {
             height: 5em !important;
           }
         }
@@ -479,11 +479,10 @@ nav {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
       height: auto;
-      img{
+      img {
         height: 7em !important;
       }
     }
-    
   }
   .contact {
     .divContact {
@@ -525,11 +524,12 @@ nav {
     font-size: 20px;
   }
   .accueil {
-    background-image: url(../ressources/Computer_tel-min.png) !important;
+    background-position: center;
+    background-size: cover;
     margin: 0;
     h1 {
       font-size: 20px;
-      margin: 10% auto;
+      margin: 20% auto;
     }
   }
   .presentation {
@@ -577,7 +577,6 @@ nav {
         margin: auto;
       }
     }
-    
   }
   .projets {
     height: 100%;
@@ -588,7 +587,7 @@ nav {
     }
     li:nth-child(1) {
       img {
-       margin-bottom: -0.8em;
+        margin-bottom: -0.8em;
       }
     }
   }

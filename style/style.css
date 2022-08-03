@@ -506,12 +506,13 @@ nav .navlinks-container a:hover::after {
     font-size: 20px;
   }
   .accueil {
-    background-image: url(../ressources/Computer_tel-min.png) !important;
+    background-position: center;
+    background-size: cover;
     margin: 0;
   }
   .accueil h1 {
     font-size: 20px;
-    margin: 10% auto;
+    margin: 20% auto;
   }
   .presentation {
     grid-template-areas: "titre" "photo" "texte";
