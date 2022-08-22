@@ -335,7 +335,7 @@ nav {
 
 // RESPONSIVE TABLETTE
 
-@media (max-width: 1008px) {
+@media (max-width: 1120px) {
   body {
     display: flex;
     flex-direction: column;
@@ -530,8 +530,8 @@ nav {
 
     margin: 0;
     h1 {
-      font-size: 20px;
-      margin: 20% auto;
+      font-size: 25px;
+      margin: 20% 0 80% 3em;
     }
   }
   .presentation {

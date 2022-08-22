@@ -335,7 +335,7 @@ nav .navlinks-container a:hover::after {
   color: white;
 }
 
-@media (max-width: 1008px) {
+@media (max-width: 1120px) {
   body {
     display: flex;
     flex-direction: column;
@@ -512,8 +512,8 @@ nav .navlinks-container a:hover::after {
     margin: 0;
   }
   .accueil h1 {
-    font-size: 20px;
-    margin: 20% auto;
+    font-size: 25px;
+    margin: 20% 0 80% 3em;
   }
   .presentation {
     grid-template-areas: "titre" "photo" "texte";
